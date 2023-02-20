@@ -1,0 +1,28 @@
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+.btn-container .btn-light {
+  background: #a5a5a5;
+  border-radius: 24px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 141.9%;
+  /* identical to box height, or 20px */
+
+  width: 140px;
+  height: 40px;
+
+  color: #fafcfc;
+}
+
+.btn-container .btn-dark {
+  width: 140px;
+  height: 40px;
+
+  background: #1c1b1f;
+  border-radius: 24px;
+}
