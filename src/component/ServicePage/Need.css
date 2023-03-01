@@ -1,0 +1,59 @@
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 28px;
+}
+input[type="date"] {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 16px;
+  gap: 8px;
+
+  /* white/40 */
+  text-transform: uppercase;
+  border: 1px solid #c1c9ca;
+  border-radius: 8px;
+}
+
+.Selectiondatebtn {
+  border: 1px solid #c1c9ca;
+  border-radius: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 8px;
+  background-color: white;
+  font-size: 12px;
+}
+.Selectiondatebtn:hover {
+  background-color: black;
+  color: white;
+}
+.selectionDate {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  font-weight: bold;
+}
+@media screen and (max-width: 580px) {
+  .selectionDate {
+    flex-direction: column;
+    width: 100%;
+  }
+  .Selectiondatebtn {
+    width: 100%;
+    font-size: 15px;
+  }
+}

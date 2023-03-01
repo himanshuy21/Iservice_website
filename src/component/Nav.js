@@ -3,8 +3,9 @@ import "../style/nav.css";
 function Navbar() {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light fixed-top"
-      style={{ width: "100%" }}
+      className="navbar navbar-expand-lg navbar-light "
+      // style={{ width: "100%" }}
+      // style={{ height: "60px" }}
     >
       <div className="container-fluid ">
         <div className="mobileContainer">

@@ -1,0 +1,44 @@
+.locationContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.downLocation {
+  background: #dadada;
+  border-radius: 8px;
+  margin-top: 12px;
+  width: 100%;
+  height: 224px;
+}
+.upLocation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 100%;
+}
+.upLeftlocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 141.9%;
+  /* identical to box height, or 20px */
+
+  color: #000000;
+}
+@media screen and (max-width: 580px) {
+  .upLocation {
+    flex-direction: column;
+  }
+}

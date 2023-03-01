@@ -1,0 +1,160 @@
+.brandbox {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  width: 514px;
+  height: 89px;
+  padding: 12px;
+  background: #ededed;
+  border-radius: 8px;
+}
+.leftbrandbox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 60%;
+}
+.firstleftbrandbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.secondleftbrandbox {
+  display: flex;
+}
+.textname {
+  width: 84px;
+  height: 17px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 141.9%;
+  /* identical to box height, or 17px */
+
+  color: #000000;
+}
+.details {
+  width: 200px;
+  height: 17px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 141.9%;
+  /* identical to box height, or 17px */
+
+  color: #000000;
+}
+.SelectContainers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+  gap: 40px;
+}
+.upContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+}
+.firstSelectioncon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.secondSelectioncon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+  /* 
+  width: 628px;
+  height: 48px; */
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.Selectionbtn {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 8px;
+
+  width: 148px;
+  height: 48px;
+
+  /* white/40 */
+
+  border: 1px solid #c1c9ca;
+  border-radius: 72px;
+}
+.downContiner {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 39px;
+  /* 
+  width: 627px;
+  height: 68px; */
+}
+@media screen and (max-width: 880px) {
+  .downContiner {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .firstSelectioncon {
+    flex-direction: column;
+  }
+  .secondSelectioncon {
+    flex-direction: column;
+  }
+  .upContainer {
+    flex-direction: row;
+  }
+  .firstDowncon {
+    width: 100%;
+  }
+  .brandbox {
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-brand {
+    display: none;
+  }
+  .center {
+    width: 100%;
+  }
+  .center h2 {
+    font-size: 25px;
+  }
+  .center h2 p {
+    font-size: 100%;
+  }
+}

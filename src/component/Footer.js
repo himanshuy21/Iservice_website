@@ -1,117 +1,73 @@
 import React from "react";
-function Footer() {
+import { BsTelephone } from "react-icons/bs";
+import { SlLocationPin } from "react-icons/sl";
+import { AiOutlineMail } from "react-icons/ai";
+import { FaFirefoxBrowser } from "react-icons/fa";
+
+export default function Footer() {
   return (
-    <>
-      <footer className="row row-cols-4  ">
-        <div className="col">
-          <a
-            href="/"
-            className="d-flex align-items-center mb-3 link-dark text-decoration-none"
-          >
-            {/* <svg className="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg> */}
-          </a>
-          <p className="text-muted">© 2021</p>
-        </div>
+    <footer className="text-center text-lg-start bg-dark text-muted">
+      <section className="d-flex justify-content-center ">
+        <div className="container text-center text-md-start mt-5">
+          <div className="row mt-3">
+            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4 text-white">
+                iService India
+              </h6>
+              <p className="text-white">
+                iService – Mobile, Laptop, Printer, Camera, Console,Repairs
+                Service. Fastest Way to Repair Your Device.
+              </p>
+            </div>
 
-        <div className="col"></div>
+            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-white">
+              <h6 className="fw-bold text-white mb-4">Pages</h6>
+              <p className="text-white">
+                <a href="#!" className="text-reset">
+                  Home
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Booking
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Part Purchase
+                </a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">
+                  Contact Us
+                </a>
+              </p>
+            </div>
 
-        <div className="col">
-          <h5>Section</h5>
-          <ul className="nav flex-column">
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Home
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Features
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                FAQs
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                About
-              </a>
-            </li>
-          </ul>
+            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-white">
+              <h6 className="text-uppercase fw-bold mb-4 text-white">
+                Contact Us
+              </h6>
+              <p className="text-white">
+                <BsTelephone /> Phone
+              </p>
+              <p>
+                <FaFirefoxBrowser /> Website
+              </p>
+              <p>
+                <SlLocationPin /> Location
+              </p>
+              <p>
+                <AiOutlineMail /> Mail
+              </p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div className="col">
-          <h5>Section</h5>
-          <ul className="nav flex-column">
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Home
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Features
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                FAQs
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                About
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="col">
-          <h5>Section</h5>
-          <ul className="nav flex-column">
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Home
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Features
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                Pricing
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                FAQs
-              </a>
-            </li>
-            <li className="nav-item mb-2">
-              <a href="#" className="nav-link p-0 text-muted">
-                About
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </>
+      <div className="text-center p-4 text-white ">
+        © 2023 iService India All right reserved:
+      </div>
+    </footer>
   );
 }
-
-export default Footer;

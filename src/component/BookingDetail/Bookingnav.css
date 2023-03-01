@@ -1,0 +1,182 @@
+.BookingDetail {
+  width: 100%;
+  /* height: 193px; */
+  padding: 40px;
+  background: rgba(219, 219, 219, 0.4);
+}
+.bookingtitle {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+.bookingdes {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 50%;
+  color: #000000;
+}
+.breadcrumb-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 141.9%;
+  /* identical to box height, or 20px */
+  cursor: pointer;
+  color: #000000;
+}
+.MainContainerBookingDes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.BookinContainer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 579px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: -2px 1px 11px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 12px;
+}
+.fsbtn {
+  background: #d9d9d9;
+  border-radius: 8px;
+  border-color: aliceblue;
+  width: 169px;
+  height: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 141.9%;
+  /* identical to box height, or 20px */
+
+  color: #000000;
+}
+.secondstatus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  margin-top: 15px;
+  width: 100%;
+}
+.seconds1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.images {
+  width: 53px;
+  height: 48px;
+  border-radius: 80px;
+  background: #d9d9d9;
+  object-fit: cover;
+}
+.names {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: 0.25px;
+
+  color: #747979;
+}
+.phoneNumber {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.imageContainer {
+  padding-top: 12px;
+  width: 525px;
+  display: flex;
+  gap: 20px;
+}
+.customerDetail {
+  width: 100%;
+}
+.clientDetail {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  /* Grey/70 */
+
+  color: #62707e;
+}
+.fa-phone {
+  cursor: pointer;
+}
+.deviceDcon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.detailsOfdev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trackdes {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  color: #1c1b1f;
+}
+@media screen and (max-width: 580px) {
+  .trackdes {
+    width: 100%;
+  }
+  .bookingdes {
+    width: 70%;
+  }
+  .BookinContainer {
+    width: 70%;
+  }
+  .imageContainer {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .MainContainerBookingDes {
+    width: 100%;
+  }
+  .images {
+    width: 53px;
+    height: 40px;
+  }
+  .seconds1 {
+    width: 100%;
+  }
+}
