@@ -16,6 +16,7 @@ import { BookingDetail3 } from "./component/BookingCase1/BookingDetail3";
 import { BookingDetail4 } from "./component/BookingCase1/BookingDetail4";
 import { BookingDetail5 } from "./component/BookingCase1/BookingDetail5";
 import { Processed } from "./component/ProcessToPayment/Proceseed";
+import { SucessPayment } from "./component/SuccessFulPayment/Sucess";
 function App() {
   return (
     <div>
@@ -61,6 +62,7 @@ function App() {
             element={<BookingDetail5 />}
           ></Route>
           <Route exact path="/proceedtopay" element={<Processed />}></Route>
+          <Route exact path="/success" element={<SucessPayment />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
+import FooterNext from "../FooterNext";
 import Navbar from "../Nav";
 import CartProduct from "./CartProduct";
 
@@ -62,6 +63,7 @@ export default function CartMain() {
           </div>
         </div>
       </section>
+      <FooterNext next="/thanku" />
       <Footer />
     </div>
   );

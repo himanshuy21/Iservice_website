@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../Footer";
+import FooterNext from "../FooterNext";
 import Navbar from "../Nav";
 import SimilarProducts from "./SimilarProduct";
 
@@ -34,6 +35,7 @@ export default function OrderBanner() {
           </div>
         </div>
       </div>
+      <FooterNext prev="/cartmain" />
       <Footer />
     </div>
   );
