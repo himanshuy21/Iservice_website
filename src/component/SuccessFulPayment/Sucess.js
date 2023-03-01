@@ -12,7 +12,7 @@ export function SucessPayment() {
       <SuccessNav />
       <SuccessDes />
       <SuccessFooter />
-      <FooterNext prev="/proceedtopay" />
+      <FooterNext prev="/proceedtopay" next="/partpurchase " />
       <Footer />
     </>
   );

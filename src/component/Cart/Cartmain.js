@@ -63,7 +63,7 @@ export default function CartMain() {
           </div>
         </div>
       </section>
-      <FooterNext next="/thanku" />
+      <FooterNext prev="/partpurchase" next="/thanku" />
       <Footer />
     </div>
   );
