@@ -3,7 +3,7 @@ import React from "react";
 export default function CartProduct() {
   return (
     <div class="card cartProduct">
-      <div class="card-body d-flex justify-content-between align-items-center">
+      <div class="card-body d-flex justify-content-between align-items-center cart-product-card">
         <div>
           <img
             src="banner2.png"
