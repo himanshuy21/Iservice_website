@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white, #f7f7f7;
+}
+.containerDrag {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FILE UPLOAD */
+
+.dropzone,
+.uploads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 445px;
+  height: 200px;
+  gap: 30px;
+  background: #dadada;
+  border-radius: 8px;
+  padding: 2rem;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.list-item {
+  display: flex;
+  padding: 0;
+  margin: 8px 0;
+  min-width: 300px;
+  font-size: 22px;
+  background-color: #d4d2d2;
+  cursor: grab;
+  border-radius: 10px;
+}
+
+.list-item > h3 {
+  padding: 10px;
+  margin: 0;
+}
+
+.list-item > span {
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  border-right: 2px solid white;
+  padding: 10px;
+  padding-right: 16px;
+}
+
+.next-position {
+  border: 2px solid #34d44f;
+  opacity: 0.2;
+}
+@media screen and (max-width: 880px) {
+  .dropzone,
+  .uploads {
+    width: 100%;
+  }
+}

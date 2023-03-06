@@ -14,7 +14,7 @@ export default function CartProduct() {
         </div>
         <div className="mx-3">
           <h4 class="card-title my-2 servicesHeading ">
-            <a>Samsung Galaxy A04s screen</a>
+            Samsung Galaxy A04s screen
           </h4>
 
           <p class="card-text">

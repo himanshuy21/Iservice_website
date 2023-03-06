@@ -1,7 +1,14 @@
 import React from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 import { Link } from "react-router-dom";
 import "../style/login.css";
 function Login() {
+  const loginDone = () => {
+    toast.success("Login SuccessFully", { autoClose: 1000 });
+  };
+  <ToastContainer />;
   return (
     <>
       <div className="mainContainer">
@@ -22,6 +29,7 @@ function Login() {
                     className="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
+                    required
                   />
                 </div>
                 <div className=" customForm">
@@ -32,20 +40,23 @@ function Login() {
                     type="password"
                     className="form-control"
                     id="exampleInputPassword1"
+                    required
                   />
                 </div>
                 <div className=" Forget ">
                   {/* <Link className="form-check-label">Forgot Password?</Link> */}
                   <p className="form-check-label">Forget Password?</p>
                 </div>
-                <button type="submit" className=" customButton">
-                  <Link
-                    to="/case1"
-                    style={{ color: "white", textDecoration: "none" }}
-                  >
+                <button
+                  type="submit"
+                  className=" customButton"
+                  onClick={loginDone}
+                >
+                  <Link to="/case1" className="Linkbtn">
                     Login
                   </Link>
                 </button>
+
                 <div className="mt-3 account">
                   Don’t have an account?
                   <Link to="/signup" className="Link">
