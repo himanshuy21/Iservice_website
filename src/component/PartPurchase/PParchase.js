@@ -3,13 +3,18 @@ import FooterNext from "../FooterNext";
 import Navbar from "../Nav";
 import { PartPurNav } from "./PartPurNav";
 import ProductInfoCard from "./ProductInfoCard";
+import { toast, ToastContainer } from "react-toastify";
 
 export function PartPurchase() {
+  const SubmitDetail = () => {
+    toast.success("Detail Submitted", { autoClose: 1000 });
+  };
+
   return (
     <div>
+      <ToastContainer />;
       <Navbar />
       <PartPurNav />
-
       <section>
         <div className="container py-5">
           <div className="row d-flex justify-content-center my-4">
@@ -53,6 +58,9 @@ export function PartPurchase() {
                   delivered to you. If it exceeds 5 business days, kindly send
                   an email to info@iserviceindia.in
                 </p>
+                <button className="btn btn-dark m-4" onClick={SubmitDetail}>
+                  Submit Details
+                </button>
               </div>
             </div>
           </div>

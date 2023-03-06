@@ -1,16 +1,16 @@
 import React from "react";
+import "./Part.css";
 import "../BookingDetail/Bookingnav.css";
+import { toast, ToastContainer } from "react-toastify";
 export default function ProductInfoCard() {
+  const Addtocart = () => {
+    toast.success("Add to Cart", { autoClose: 1000 });
+  };
   return (
     <div className="card cartProduct">
       <div className="card-body d-flex align-items-center cart-product-card">
         <div>
-          <img
-            src="banner2.png"
-            alt="..."
-            className="product-info-image "
-            style={{ width: "100%" }}
-          />
+          <img src="banner2.png" alt="..." className="product-info-image " />
         </div>
         <div className="mx-4">
           <h4 className="card-title my-2 servicesHeading ">
@@ -25,7 +25,7 @@ export default function ProductInfoCard() {
               ₹6,000
             </span>
           </div>
-          <button type="button" className="btn btn-dark">
+          <button type="button" className="btn btn-dark" onClick={Addtocart}>
             Add to cart
           </button>
         </div>

@@ -10,7 +10,7 @@ export function BookingDetail() {
       <Navbar />
       <BookingNav />
       <Bookingdes1 />
-      <FooterNext prev="/location" next="/bookingdetail2" />
+      <FooterNext prev="/case1" next="/bookingdetail2" />
       <Footer />
     </>
   );

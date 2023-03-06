@@ -2,7 +2,6 @@ import React from "react";
 import "../BookingCase1/mainContainer.css";
 import { Booking1Form } from "./Booking1Form";
 import DragDropFiles from "./DrapAnddrop/DragDrop";
-import HorizontalLinearStepper from "./MultiStepForm/MultiStepForm";
 export default function Booking1body() {
   return (
     <>
@@ -14,7 +13,7 @@ export default function Booking1body() {
           vel. Ut
         </p>
         {/* <div className="image"></div> */}
-        <HorizontalLinearStepper />
+
         <DragDropFiles />
         <Booking1Form />
       </div>

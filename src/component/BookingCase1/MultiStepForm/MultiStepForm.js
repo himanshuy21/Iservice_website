@@ -6,6 +6,9 @@ import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Booking1body from "../Booking1body";
+import { ProblemPageForm } from "../../ProblemDevice/ProblemPageForm";
+import { NeedService } from "../../ServicePage/Need";
+import { Location } from "../../Location/Location";
 
 const steps = ["Device", "Problem", "Schedule", "Location"];
 
@@ -56,7 +59,7 @@ export default function HorizontalLinearStepper() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box className="center">
       <Stepper activeStep={activeStep}>
         {steps.map((label, index) => {
           const stepProps = {};
@@ -88,7 +91,10 @@ export default function HorizontalLinearStepper() {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          {/* {activeStep === 0 && <Booking1body />} */}
+          {activeStep === 0 && <Booking1body />}
+          {activeStep === 1 && <ProblemPageForm />}
+          {activeStep === 2 && <NeedService />}
+          {activeStep === 3 && <Location />}
           {/* <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography> */}
           <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
             <Button

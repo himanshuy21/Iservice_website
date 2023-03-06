@@ -1,0 +1,9 @@
+.product-info-image {
+  width: 100%;
+}
+/* Part Purchase folder css cart-product-card */
+@media screen and (max-width: 580px) {
+  .cart-product-card {
+    flex-direction: column;
+  }
+}

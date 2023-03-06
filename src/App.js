@@ -3,9 +3,6 @@ import Login from "./component/login";
 import SignUp from "./component/Signup";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BookingCase1 from "./component/Bookingcase1";
-import ProblemPage from "./component/ProblemDevice/ProblemPage";
-import { NeedService } from "./component/ServicePage/Need";
-import { Location } from "./component/Location/Location";
 import { BookingDetail } from "./component/BookingDetail/BookingDetail";
 import { BookingserviceEngg } from "./component/BookingDetail/BookingSengg";
 import OrderBanner from "./component/OrderConfirmation/OrderBanner";
@@ -26,9 +23,9 @@ function App() {
           <Route exact path="/" element={<Login />}></Route>
           <Route exact path="/signup" element={<SignUp />}></Route>
           <Route exact path="/case1" element={<BookingCase1 />}></Route>
-          <Route exact path="/problem" element={<ProblemPage />}></Route>
+          {/* <Route exact path="/problem" element={<ProblemPage />}></Route>
           <Route exact path="/need" element={<NeedService />}></Route>
-          <Route exact path="/location" element={<Location />}></Route>
+          <Route exact path="/location" element={<Location />}></Route> */}
           <Route
             exact
             path="/BookingDetail1"

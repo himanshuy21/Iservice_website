@@ -2,13 +2,15 @@ import React from "react";
 import Navbar from "./Nav";
 import Footer from "./Footer";
 import FooterNext from "./FooterNext";
-import Booking1body from "./BookingCase1/Booking1body";
+import HorizontalLinearStepper from "./BookingCase1/MultiStepForm/MultiStepForm";
+import { ToastContainer } from "react-toastify";
 function BookingCase1() {
   return (
     <>
+      <ToastContainer />
       <Navbar />
-      <Booking1body />
-      <FooterNext prev="/" next="/problem" />
+      <HorizontalLinearStepper />
+      <FooterNext prev="/" next="/BookingDetail1" />
       <Footer />
     </>
   );
