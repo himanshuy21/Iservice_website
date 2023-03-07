@@ -9,7 +9,7 @@ import Booking1body from "../Booking1body";
 import { ProblemPageForm } from "../../ProblemDevice/ProblemPageForm";
 import { NeedService } from "../../ServicePage/Need";
 import { Location } from "../../Location/Location";
-
+import "../mainContainer.css";
 const steps = ["Device", "Problem", "Schedule", "Location"];
 
 export default function HorizontalLinearStepper() {
@@ -59,21 +59,19 @@ export default function HorizontalLinearStepper() {
   };
 
   return (
-    <Box className="center">
-      <Stepper activeStep={activeStep}>
+    <Box className=" boxContainer">
+      <Stepper activeStep={activeStep} className="stepLabel">
         {steps.map((label, index) => {
           const stepProps = {};
           const labelProps = {};
           if (isStepOptional(index)) {
-            labelProps.optional = (
-              <Typography variant="caption">Optional</Typography>
-            );
+            labelProps.optional = <Typography variant="caption"></Typography>;
           }
           if (isStepSkipped(index)) {
             stepProps.completed = false;
           }
           return (
-            <Step key={label} {...stepProps}>
+            <Step key={label} {...stepProps} className="steplabel">
               <StepLabel {...labelProps}>{label}</StepLabel>
             </Step>
           );

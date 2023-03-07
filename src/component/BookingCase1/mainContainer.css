@@ -73,7 +73,29 @@
   flex-direction: column;
   width: 45%;
 }
+.boxContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.stepLabel {
+  width: 50%;
+  display: flex;
+}
+@media screen and (max-width: 402px) {
+  .boxContainer {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 880px) {
+  .stepLabel {
+    width: 100%;
+    display: flex;
+  }
   .optionContainer {
     flex-direction: column;
     width: 100%;

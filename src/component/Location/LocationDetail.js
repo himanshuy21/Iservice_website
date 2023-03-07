@@ -1,5 +1,6 @@
 import React from "react";
 import "./Location.css";
+import { AddressMap } from "./Map";
 export function LocationDetail() {
   return (
     <>
@@ -40,7 +41,7 @@ export function LocationDetail() {
             </div>
           </div>
         </div>
-        <div className="downLocation"></div>
+        <AddressMap />
       </div>
     </>
   );

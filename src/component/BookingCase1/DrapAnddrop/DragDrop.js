@@ -28,7 +28,7 @@ const DragDropFiles = () => {
 
   if (files)
     return (
-      <div className="uploads">
+      <div className="uploads mt-4">
         <ul>
           {Array.from(files).map((file, idx) => (
             <li key={idx}>{file.name}</li>
@@ -47,7 +47,11 @@ const DragDropFiles = () => {
 
   return (
     <>
-      <div className="dropzone" onDragOver={handleDragOver} onDrop={handleDrop}>
+      <div
+        className="dropzone mt-4"
+        onDragOver={handleDragOver}
+        onDrop={handleDrop}
+      >
         <h2>Drag and Drop Files to Upload</h2>
 
         <input
